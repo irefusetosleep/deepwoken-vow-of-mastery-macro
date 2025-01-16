@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vow of Mastery Macro</title>
+    <script type="module" src="/indexMain.js" defer></script>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <a href="#" data-tab="vow-tab">Vow of Mastery</a>
+    </div>
+
+    <div class="content">
+      <div id="vow-tab" class="tab-content active">
+        <h1>Vow of Mastery</h1>
+        <br>
+        
+        <h3><u>Keybinds</u></h3>
+        <ul id="cycle-command-list" class="command-list">
+          <li>
+            <span class="vow-cmd-text">Cycle Previous Player: </span> 
+            <input class="vow-command-input" name="cycle-prev-key" type="text" placeholder="key" readonly>
+
+            <span class="vow-cmd-text">Cycle Next Player: </span> 
+            <input class="vow-command-input" name="cycle-next-key" type="text" placeholder="key" readonly>
+          </li>
+        </ul>
+
+        <h3><u>Commands</u></h3>
+        <ul id="vow-command-list" class="command-list">
+          <li>
+            <span class="vow-cmd-text">Live: </span> 
+            <input class="vow-command-input" type="text" name="live-key" placeholder="key" readonly>
+          </li>
+          <li>
+            <span class="vow-cmd-text">Sacrifice: </span> 
+            <input class="vow-command-input" type="text" name="sacrifice-key" placeholder="key" readonly>
+          </li>
+          <li>
+            <span class="vow-cmd-text">Fight: </span> 
+            <input class="vow-command-input" type="text" name="fight-key" placeholder="key" readonly>
+          </li>
+          <li>
+            <span class="vow-cmd-text">Return: </span> 
+            <input class="vow-command-input" type="text" name="return-key" placeholder="key" readonly>
+          </li>
+          <li>
+            <span class="vow-cmd-text">Locate: </span> 
+            <input class="vow-command-input" type="text" name="locate-key" placeholder="key" readonly>
+          </li>
+          <li>
+            <span class="vow-cmd-text">leech: </span> 
+            <input class="vow-command-input" type="text" name="leech-key" placeholder="key" readonly>
+          </li>
+          <li>
+            <span class="vow-cmd-text">Run: </span> 
+            <input class="vow-command-input" type="text" name="run-key" placeholder="key" readonly>
+          </li>
+          <li>
+            <span class="vow-cmd-text">Summon: </span> 
+            <input class="vow-command-input" type="text" name="summon-key" placeholder="key" readonly>
+          </li>
+          <li>
+            <span class="vow-cmd-text">Explode: </span> 
+            <input class="vow-command-input" type="text" name="explode-key" placeholder="key" readonly>
+          </li>
+          <li>
+            <span class="vow-cmd-text">Sleep: </span> 
+            <input class="vow-command-input" type="text" name="sleep-key" placeholder="key" readonly>
+          </li>
+        </ul>
+        
+        <hr>
+        
+        <h3><u>Player Lists</u></h3>
+        <ul id="player-list">
+          <li><button id="create-list-button">Create a list...</button></li>
+        </ul>
+        
+        <hr>
+
+        <button id="vow-start-button">Start Macro</button>
+      </div>
+    </div>
+  </body>
+</html>

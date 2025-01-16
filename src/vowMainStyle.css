@@ -1,0 +1,54 @@
+/*vow macro styles*/ 
+
+body {
+  background-color: #0e0e0e;
+}
+
+.container {
+  text-align: center; /* Optional: Center text within the content */
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.word-display {
+  color: white;
+  text-align: center;
+  align-self: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Remove default margin */
+} 
+
+.button {
+  background-color: black;
+  color: #f75606;
+  font-size: 1em;
+  border: 1px solid #f75606;
+  text-align: center;
+}
+
+#execute-button {
+  background-color: black;
+  border: 2px solid #f75606;
+  border-radius: 3px;
+  color: #f75606;
+  font-size: 18px;
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 20px; /* Adjust distance from the bottom */
+  display: flex;
+  align-self: center;
+  align-items: center;
+}
+
+#cmd-display {
+  font-size: 36px;
+}
+
+#plr-display {
+  font-size: 24px;
+}

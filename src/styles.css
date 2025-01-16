@@ -1,0 +1,152 @@
+u {
+  color: #f75606
+}
+
+body {
+  background-color: #0e0e0e;
+  margin: 0;
+  flex-direction: row;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 200px;
+  background-color: #161616;
+  color: white;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar a {
+  padding: 15px;
+  text-decoration: none;
+  color: #f75606;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #444;
+  transition: background-color 0.15s ease
+}
+
+.sidebar a:hover {
+  background-color: #2d2d2d;
+}
+
+.content {
+  flex: 1;
+  padding: 10px;
+  margin-left: 200px;
+}
+
+.tab-content {
+  display: none; /* Hidden by default */
+}
+
+.tab-content.active {
+  display: flex;
+  height: 100%; /* Ensures it takes the full height of the content container */
+  flex-direction: column; /* Centers content vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  text-align: center; /* Ensures text alignment is also centered */
+}
+
+#vow-tab {
+  color: white;
+}
+
+#vow-tab ul li {
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:#FFFFFF;
+  height: 1px;
+}
+
+.command-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.command-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.command-list span {
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.vow-command-input { /*this is the key input box*/
+  margin-left: 20px;
+  width: 100px; /* Sets the width of the input box */
+  height: 20px; /* Sets the height of the input box */
+  background-color: black; /* Sets the background color */
+  color: #f75606; /* Sets the text color */
+  border: 1px solid #f75606; /* Sets the border color and thickness */
+  border-radius: 5px; /* Rounds the corners */
+  padding: 5px 10px; /* Adds padding inside the input */
+  font-size: 1em; /* Sets the font size */
+}
+
+.vow-command-input:focus {
+  outline: none;
+  border-color: #ff8000;
+}
+
+#player-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#player-list li {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#create-list-button {
+  color: #f75606;
+  background-color: black;
+  border: 1px solid #f75606; /* Sets the border color and thickness */
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1em;
+}
+
+#create-list-button:focus {
+  outline: none;
+  border-color: #ff8000;
+}
+
+#vow-start-button {
+  align-self: center;
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  color: #f75606;
+  border-radius: 5px;
+  border: 1px solid #f75606;
+  font-size: 1em;
+  margin-top: 20px;
+}
